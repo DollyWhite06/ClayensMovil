@@ -1,0 +1,46 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  color: #f27c0a; /* Naranja Clayens */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+ion-item {
+  margin-bottom: 15px;
+  --highlight-color-focused: #f27c0a;
+}
+
+.login-btn {
+  --background: #f27c0a;
+  --border-radius: 20px;
+  margin-top: 20px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+
+  a {
+    color: #f27c0a;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+  }
+}

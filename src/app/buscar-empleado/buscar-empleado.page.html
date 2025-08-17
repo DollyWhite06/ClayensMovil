@@ -1,0 +1,29 @@
+<ion-content class="ion-padding">
+
+  <!-- logo arriba -->
+  <div class="logo-container">
+    <img src="assets/LogoMini.png" alt="Logo Clayens" class="logo">
+  </div>
+
+  <!-- Título -->
+  <h1 class="title">CLAYENS MEXICO</h1>
+  <p class="subtitle">BUSCAR EMPLEADO</p>
+
+  <!-- numero -->
+  <ion-item>
+    <ion-input
+      label="Numero de empleado"
+      labelPlacement="floating"
+      type="numero"
+      [(ngModel)]="numero"
+      required>
+    </ion-input>
+  </ion-item>
+
+  <!-- buscar boton -->
+  <ion-button expand="block" shape="round" class="login-btn" (click)="buscar()">
+    Buscar Empleado
+  </ion-button>
+
+
+</ion-content>

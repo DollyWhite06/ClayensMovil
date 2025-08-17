@@ -1,0 +1,7 @@
+{
+  "name": "ClayensMovil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
