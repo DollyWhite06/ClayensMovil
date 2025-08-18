@@ -1,20 +1,27 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
+import { NgIf, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.page.html',
   styleUrls: ['./dashboard.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonicModule, RouterModule, NgIf, NgFor]
 })
-export class DashboardPage implements OnInit {
+export class DashboardPage {
 
-  constructor() { }
 
-  ngOnInit() {
+  buscarEmpleado() {
+    console.log('Ir a Buscar Empleado');
+    // 
+    // this.router.navigate(['/buscar']);
+  }
+
+  verReportes() {
+    console.log('Ir a Reportes');
+    // this.router.navigate(['/reportes']);
   }
 
 }

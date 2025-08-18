@@ -7,14 +7,13 @@ import { NgIf, NgFor } from '@angular/common';
 
 
 @Component({
-  selector: 'app-historico',
-  templateUrl: './historico.page.html',
-  styleUrls: ['./historico.page.scss'],
-  standalone: true,
+  selector: 'app-asistencia-fecha',
+  templateUrl: './asistencia-fecha.page.html',
+  styleUrls: ['./asistencia-fecha.page.scss'],
+   standalone: true,
   imports: [CommonModule,IonicModule, FormsModule, NgIf, NgFor]
 })
-export class HistoricoPage  {
-
+export class AsistenciaFechaPage {
  
 fechaInicio: string = '';
   fechaFin: string = '';

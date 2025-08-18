@@ -1,0 +1,33 @@
+.filtro-card {
+  margin-bottom: 20px;
+}
+
+.tabla-container {
+  padding: 10px;
+
+  ion-row {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .tabla-header {
+    background-color: #f27c0a;
+    color: white;
+    font-weight: bold;
+  }
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}

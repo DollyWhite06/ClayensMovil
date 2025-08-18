@@ -1,0 +1,71 @@
+<ion-content class="ion-padding">
+  <div class="logo-container">
+    <img src="assets/LogoMini.png" alt="Logo Clayens" class="logo">
+  </div>
+  <ion-grid>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="card card-naranja">
+          <ion-card-content class="center-content">
+            <ion-icon name="person" size="large"></ion-icon>
+            <p class="numero">120</p>
+            <p class="texto">Empleados en planta</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="card">
+          <ion-card-content class="center-content">
+            <div class="circle"></div>
+            <p class="numero">90%</p>
+            <p class="texto">Porcentaje de asistencia</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="card">
+          <ion-card-content class="center-content">
+            <p class="numero">50</p>
+            <p class="texto">Planta 1</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="card card-naranja">
+          <ion-card-content class="center-content">
+            <p class="numero">70</p>
+            <p class="texto">Planta 2</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card class="card card-button" (click)="buscarEmpleado()">
+          <ion-card-content class="center-content">
+            <ion-icon name="search" size="large"></ion-icon>
+            <p class="texto">Buscar Empleado</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card class="card card-button" (click)="verReportes()">
+          <ion-card-content class="center-content">
+            <ion-icon name="bar-chart" size="large"></ion-icon>
+            <p class="texto">Reportes</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

@@ -44,3 +44,13 @@ ion-item {
     margin-left: 5px;
   }
 }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}

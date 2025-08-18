@@ -1,20 +1,26 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-reportes',
   templateUrl: './reportes.page.html',
   styleUrls: ['./reportes.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonicModule, RouterModule]
 })
-export class ReportesPage implements OnInit {
+export class ReportesPage  {
 
-  constructor() { }
+  verAsistenciaHoy() {
+    console.log('Ir a asistencia de hoy');
+    // this.router.navigate(['/asistencia']);
+  }
 
-  ngOnInit() {
+  verHistorico() {
+    console.log('Ir a histórico de asistencia');
+    // this.router.navigate(['/historico']);
   }
 
 }

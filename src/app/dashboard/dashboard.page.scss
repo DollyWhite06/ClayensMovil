@@ -1,0 +1,66 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.card {
+  border-radius: 12px;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ion-card-content {
+    padding: 10px;
+  }
+
+  .numero {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .texto {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card-naranja {
+  background-color: #f27c0a;
+  color: white;
+
+  .texto {
+    color: white;
+  }
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background-color: #f27c0a;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+.card-button {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+}

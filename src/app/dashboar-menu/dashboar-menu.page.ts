@@ -1,20 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { RouterModule, Router } from '@angular/router';
+import { NgIf, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-dashboar-menu',
   templateUrl: './dashboar-menu.page.html',
   styleUrls: ['./dashboar-menu.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonicModule, RouterModule, NgIf, NgFor]
 })
-export class DashboarMenuPage implements OnInit {
+export class DashboarMenuPage  {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
+  buscarEmpleado() {
+    console.log('Ir a Buscar Empleado');
+    this.router.navigate(['/buscar-empleado']);  // Cambia la ruta si tienes otra
   }
 
+  verReportes() {
+    console.log('Ir a Reportes');
+    this.router.navigate(['/reportes']);  // Cambia la ruta si tienes otra
+  }
+
+  logout() {
+    console.log('cerrar sesión');
+    // Aquí puedes limpiar tokens/session si usas auth
+    this.router.navigate(['/login']);
+  }
 }

@@ -12,7 +12,7 @@ export const routes: Routes = [
   loadComponent: () => import('./login/login.page').then(m => m.LoginPage)
 },
   {
-    path: 'dashboar-menu',
+    path: 'menu',
     loadComponent: () => import('./dashboar-menu/dashboar-menu.page').then( m => m.DashboarMenuPage)
   },
   {
@@ -48,8 +48,12 @@ export const routes: Routes = [
     loadComponent: () => import('./empleado/empleado.page').then( m => m.EmpleadoPage)
   },
   {
-    path: 'historico-empleado',
+    path: 'historicoemp',
     loadComponent: () => import('./historico-empleado/historico-empleado.page').then( m => m.HistoricoEmpleadoPage)
+  },
+  {
+    path: 'asistencia',
+    loadComponent: () => import('./asistencia-fecha/asistencia-fecha.page').then( m => m.AsistenciaFechaPage)
   }
 
 ];
