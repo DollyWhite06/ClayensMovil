@@ -1,0 +1,82 @@
+<ion-content class="ion-padding">
+
+  <div class="logo-container">
+    <img src="assets/LogoMini.png" alt="Logo Clayens" class="logo">
+  </div>
+
+  <ion-card class="filtro-card">
+    <ion-grid>
+
+      <!-- TÍTULO -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="stacked">Título de la tarea</ion-label>
+            <ion-input type="text" [(ngModel)]="titulo" placeholder="Escribe el título"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- DESCRIPCIÓN -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="stacked">Descripción</ion-label>
+            <ion-textarea rows="4" [(ngModel)]="descripcion" placeholder="Describe la tarea"></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- ASIGNADO -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="stacked">Asignar a</ion-label>
+            <ion-input type="text" [(ngModel)]="asignado" placeholder="Departamento responsable"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- FECHAS -->
+      <ion-row>
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="stacked">Fecha de Inicio</ion-label>
+            <ion-input type="date" [(ngModel)]="fechaInicio"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="stacked">Fecha de Fin</ion-label>
+            <ion-input type="date" [(ngModel)]="fechaFin"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- ESTADO -->
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="stacked">Estado</ion-label>
+            <ion-select [(ngModel)]="estado" interface="popover" placeholder="Selecciona estado">
+              <ion-select-option value="pendiente">Activa</ion-select-option>
+              <ion-select-option value="terminada">Terminada</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <!-- BOTÓN -->
+      <ion-row class="ion-padding-top">
+        <ion-col size="12">
+          <ion-button expand="block" color="primary" (click)="crearTarea()">
+            Crear Tarea
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+  </ion-card>
+
+</ion-content>

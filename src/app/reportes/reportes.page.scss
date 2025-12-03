@@ -57,3 +57,11 @@
   background-color: #ffffff;
 }
 
+card-button {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+}

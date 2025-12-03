@@ -54,23 +54,33 @@
     </ion-grid>
   </ion-card>
 
-  <!-- Tabla de asistencia -->
   <ion-card class="tabla-container">
     <ion-row class="tabla-header">
       <ion-col><strong>Nombre</strong></ion-col>
-      <ion-col><strong>Tarea</strong></ion-col>
+      <ion-col><strong>Descripcion</strong></ion-col>
       <ion-col><strong>Fecha</strong></ion-col>
       <ion-col><strong>Status</strong></ion-col>
+            <ion-col><strong>Responsable</strong></ion-col>
+
     </ion-row>
 
     <ion-row *ngFor="let item of historial">
-      <ion-col>{{ item.nombre }}</ion-col>
       <ion-col>{{ item.tarea }}</ion-col>
+      <ion-col>{{ item.descripciontarea }}</ion-col>
       <ion-col>{{ item.fecha }}</ion-col>
       <ion-col>
         <ion-icon [name]="item.statusIcon" [color]="item.statusColor"></ion-icon>
         {{ item.statusTexto }}
       </ion-col>
+<ion-col size="4">
+          <ion-item>
+            <ion-label position="stacked">Responsable</ion-label>
+            <ion-select [(ngModel)]="status" interface="popover">
+              <ion-select-option value="empleados">{{ item.empleado }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      
     </ion-row>
   </ion-card>
 

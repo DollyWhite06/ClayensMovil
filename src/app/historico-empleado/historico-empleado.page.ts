@@ -18,23 +18,24 @@ fechaInicio: string = '';
   planta: string = 'all';
   departamento: string = 'all';
   status: string = 'all';
+  tarea: string = 'all';  
 
   historial = [
     {
       nombre: 'Kiara Barrientos',
-      horario: '8:00/18:00',
+      tarea: 'Actualizar base de datos',
       fecha: '01/06/2025',
       statusIcon: 'checkmark-circle',
       statusColor: 'success',
-      statusTexto: 'Asistencia'
+      statusTexto: 'Activa'
     },
     {
       nombre: 'Kiara Barrientos',
-      horario: '--:--/--:--',
+      tarea: 'Terminar reporte mensual',
       fecha: '01/06/2025',
       statusIcon: 'close-circle',
       statusColor: 'danger',
-      statusTexto: 'N/P'
+      statusTexto: 'Terminada'
     }
   ];
 

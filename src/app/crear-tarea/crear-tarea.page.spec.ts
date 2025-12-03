@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CambiarPage } from './cambiar.page';
+import { CrearTareaPage } from './crear-tarea.page';
 
-describe('CambiarPage', () => {
-  let component: CambiarPage;
-  let fixture: ComponentFixture<CambiarPage>;
+describe('CrearTareaPage', () => {
+  let component: CrearTareaPage;
+  let fixture: ComponentFixture<CrearTareaPage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CambiarPage);
+    fixture = TestBed.createComponent(CrearTareaPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

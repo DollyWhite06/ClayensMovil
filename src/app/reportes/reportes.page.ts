@@ -13,13 +13,14 @@ import { RouterModule } from '@angular/router';
 })
 export class ReportesPage  {
 
-  verAsistenciaHoy() {
-    console.log('Ir a asistencia de hoy');
-    // this.router.navigate(['/asistencia']);
+  buscarEmpleado() {
+    console.log('Ir a Buscar Empleado');
+    // 
+    // this.router.navigate(['/buscar']);
   }
 
   verHistorico() {
-    console.log('Ir a histórico de asistencia');
+    console.log('Ir a histórico de tareas');
     // this.router.navigate(['/historico']);
   }
 

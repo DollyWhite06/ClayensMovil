@@ -15,8 +15,7 @@ export class DashboardPage {
 
   buscarEmpleado() {
     console.log('Ir a Buscar Empleado');
-    // 
-    // this.router.navigate(['/buscar']);
+    //this.router.navigate(['/buscar']);
   }
 
   verReportes() {

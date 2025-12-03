@@ -45,8 +45,8 @@
           <ion-item>
             <ion-label position="stacked">Status</ion-label>
             <ion-select [(ngModel)]="status" interface="popover">
-              <ion-select-option value="asistencia">Asistencia</ion-select-option>
-              <ion-select-option value="np">N/P</ion-select-option>
+              <ion-select-option value="asistencia">Activa</ion-select-option>
+              <ion-select-option value="np">Terminada</ion-select-option>
             </ion-select>
           </ion-item>
         </ion-col>
@@ -58,14 +58,14 @@
   <ion-card class="tabla-container">
     <ion-row class="tabla-header">
       <ion-col><strong>Nombre</strong></ion-col>
-      <ion-col><strong>E/S</strong></ion-col>
+      <ion-col><strong>Actividad</strong></ion-col>
       <ion-col><strong>Fecha</strong></ion-col>
       <ion-col><strong>Status</strong></ion-col>
     </ion-row>
 
     <ion-row *ngFor="let item of historial">
       <ion-col>{{ item.nombre }}</ion-col>
-      <ion-col>{{ item.horario }}</ion-col>
+      <ion-col>{{ item.tarea }}</ion-col>
       <ion-col>{{ item.fecha }}</ion-col>
       <ion-col>
         <ion-icon [name]="item.statusIcon" [color]="item.statusColor"></ion-icon>
